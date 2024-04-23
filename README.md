@@ -26,8 +26,8 @@ The Flask app establishes a connection to the SQLite database on each request an
 - `templates`: Folder containing HTML templates for rendering views.
 
 To run the application, use the following command:
-
+```
 python blogapp.py
-
+```
 Please note that this application is intended for educational purposes and should not be used as-is in a production environment.
 

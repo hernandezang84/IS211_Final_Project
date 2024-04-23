@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Welcome to the Blog!</title>
+</head>
+<body>
+    <h1>Welcome to the Blog!</h1>
+    <a href="/login">Login</a>
+    <h2>Recent Posts</h2>
+    <ul>
+        {% for post in posts %}
+            <li>
+                <a href="{{ url_for('view_post', post_id=post[0]) }}">{{ post[1] }}</a>
+            </li>
+        {% else %}
+            <p>No posts available.</p>
+        {% endfor %}
+    </ul>
+</body>
+</html>
